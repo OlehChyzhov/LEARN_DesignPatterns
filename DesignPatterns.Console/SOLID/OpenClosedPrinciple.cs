@@ -140,17 +140,17 @@
     }
 
     // This rule combines two other rules: it checks whether BOTH are satisfied.
-    public class AndSpecification : ISpecification<Product>
+    public class AndSpecification<T> : ISpecification<T>
     {
-        private ISpecification<Product> _first, _second;
+        private ISpecification<T> _first, _second;
 
-        public AndSpecification(ISpecification<Product> first, ISpecification<Product> second)
+        public AndSpecification(ISpecification<T> first, ISpecification<T> second)
         {
             _first = first;
             _second = second;
         }
 
-        public bool IsSatisfied(Product item)
+        public bool IsSatisfied(T item)
         {
             return _first.IsSatisfied(item) && _second.IsSatisfied(item);
         }
@@ -218,7 +218,7 @@
 
             // FILTER: Products that are both large AND green
             Console.WriteLine("\nLarge Green Products:");
-            var combinedSpecification = new AndSpecification(colorSpecification, sizeSpecification);
+            var combinedSpecification = new AndSpecification<Product>(colorSpecification, sizeSpecification);
             foreach (Product product in filter.Filter(products, combinedSpecification))
             {
                 Console.WriteLine($" - {product.Name} is large and green");

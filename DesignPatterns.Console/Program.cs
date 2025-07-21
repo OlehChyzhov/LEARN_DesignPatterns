@@ -4,6 +4,6 @@ public class Program
 {
     public static void Main()
     {
-        OCP_Example.Run();
+        LSP_SolutionExample.Run();
     }
 }
