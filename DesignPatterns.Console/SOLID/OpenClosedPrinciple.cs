@@ -1,5 +1,9 @@
 ﻿namespace DesignPatterns.SOLID
 {
+    // The Open/Closed Principle (OCP) states that software entities (classes, modules, etc.)
+    // should be open for extension but closed for modification.
+    // This means you should be able to add new functionality without changing existing code.
+
     #region Default Objects
     public enum Color { Red, Green, Blue }
 
@@ -80,8 +84,7 @@
     }
 
     /*
-     * This violates the Open/Closed Principle (OCP), which states:
-     * "Classes (or anything else: modules, functions, etc.) should be open for extension but closed for modification."
+     * This violates the Open/Closed Principle (OCP)."
      
      * That means you shouldn't go back to an already created class and modify its existing code just to add new functionality.
      * Instead, you should extend its behavior using new code — for example, by implementing an interface or subclass.

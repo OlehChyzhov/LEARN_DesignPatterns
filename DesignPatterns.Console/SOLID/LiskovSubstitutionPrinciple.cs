@@ -111,7 +111,9 @@
 
         public override int CalculateSalary() => (int)(_salary - _salary * 0.33);
     }
+    #endregion
 
+    #region LSP_Example
     /// <summary>
     /// This method demonstrates the fixed design — LSP is preserved because
     /// we only call GetBonus on objects that implement IBonusEligible.
@@ -150,6 +152,5 @@
     //
     // ImprovedContractualEmployee salary: 3350
     // Bonus: Not eligible
-
     #endregion
 }

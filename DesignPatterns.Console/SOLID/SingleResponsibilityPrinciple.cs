@@ -1,12 +1,12 @@
 ﻿namespace DesignPatterns.SOLID
 {
+    // The Single Responsibility Principle (SRP) states that a class should have only one reason to change —
+    // in other words, it should have only one well-defined responsibility.
+
     #region The Problem
 
     /// <summary>
     /// The Journal class represents a simple diary where you can add and remove entries.
-    /// 
-    /// According to the **Single Responsibility Principle (SRP)** from SOLID,
-    /// a class should have **only one reason to change**.
     /// 
     /// In this case, the Journal class is only responsible for **managing entries**.
     /// It is NOT responsible for saving/loading data (persistence).
