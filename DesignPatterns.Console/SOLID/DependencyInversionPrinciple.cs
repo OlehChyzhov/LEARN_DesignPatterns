@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DesignPatterns.SOLID
+﻿namespace DesignPatterns.SOLID
 {
     /// <summary>
     /// Dependency Inversion Principle (DIP) states:
