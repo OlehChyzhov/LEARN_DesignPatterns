@@ -2,6 +2,7 @@
 using DesignPatterns.Builder.Functional_Builder;
 using DesignPatterns.Builder.Solution;
 using DesignPatterns.Builder.Solution.Stepwise_Builder;
+using DesignPatterns.Factories.Bulk_Replacement;
 
 public class Program
 {
@@ -12,6 +13,7 @@ public class Program
 
         //FunctionalBuilder_Example.Run();
 
-        FacetedBuilder_Example.Run();
+        //FacetedBuilder_Example.Run();
+        BulkReplacement_Example.Run();
     }
 }
