@@ -18,9 +18,21 @@ Each principle is implemented in a separate file and structured as follows:
 - `#Solution` — Step-by-step explanation of the correct implementation.
 - `#*_Example` — A class with a `Run()` method that can be invoked from `Main`.
 
-#### 🔷 Other Design Patterns
+#### 🔷 Other Design Patterns Structure
 
-_Working on it..._
+Each design pattern has its own folder containing:
+
+- A `Problem.cs` file that demonstrates the issue the pattern addresses.
+- One or more subfolders representing specific variations or implementations of the pattern.
+
+Within these subfolders, you'll find the necessary files and classes that illustrate the pattern in detail.
+
+- If the required classes are small, they are usually placed together in the same file as the design pattern code, organized with regions for clarity.
+- Larger classes are separated into individual files for better maintainability.
+
+Note that models like `Car` or `Person` are pattern-specific and may differ between patterns or their variations.
+
+Additionally, each pattern folder typically contains a static example class with a `Run()` method to demonstrate usage, similar to the approach used in the SOLID principles section.
 
 ---
 
